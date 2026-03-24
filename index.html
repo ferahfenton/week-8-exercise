@@ -1,70 +1,120 @@
-<!--This receipe is taken from https://cooking.nytimes.com/recipes/1012494-spinach-tofu-and-sesame-stir-fry -->
-
-<!--Week 8 exercise, This was coded by Ferah Fenton. Created on Monday, March 16th, 2026 :) -->
-
 <!DOCTYPE html>
-<html lang="EN-CA">
+<html lang="eng-ca">
 <head>
-<title>Exercise 8: Spinach, Tofu, and Sesame Stir-Fry</title>
+<meta name="viewport" content="width=devic-width, initial-scale=1.0"> 
+<meta charset="UTF-8">
+<title>Exercise 8: Responsive Web Design</title>
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet"> 
 <style>
- 
-  h1 {
-  font-weight: 700;
+
+body {
+font-family: "Pacifico", cursive;
+font-size: 30px;
+background-color: aqua;
+}
+
+/* phone view */
+ @media (max-width: 600px){
+  body {
+    background-color: yellow;
+    font-family: Arial, sans-serif;
+    font-size: 0.75em;
   }
-  
-  h2 {
-    font-size: 1.1em;
-    font-weight: 700;
-    gap: 30px;
+
+  img {
+    width: 100%;
   }
-  
-  .container{
-    display: grid;
-    grid-template: 30% 70%;
-    max-width: 900px;
-    margin: 30px auto;
+
+  p {
+    width: 100%;
+    font-weight: bold;
   }
- </style>   
-  </head>
+}
+
+/* laptop view */
   
+  @media (min-width: 601px) {
+  img {
+    width: 800px;
+  }
+
+  p {
+    width: 600px;
+  }
+}
+  
+ul a {
+color: magenta;
+}
+
+p , h1 , h2 , ul , img {
+margin-left: 0;
+}
+
+img {
+margin-top: 20px;
+display: block;
+}
+
+p , #subhead {
+background-color: #eee;
+opacity: .9;
+font-weight: lighter;
+}
+
+#headline {
+display: block;
+}
+
+p {
+padding: 1em 1em 1em 20px;
+}
+
+
+/* headers */
+
+h1 , li , h2 {
+font-family: "Roboto", sans-serif;
+}
+
+h1 {
+font-size: 2em;
+background-color: black;
+color: white;
+padding: .375em;
+}
+
+h2 {
+font-size: 1.5em;
+background-color: black;
+color: white;
+display: inline-block;
+padding: .375em;
+margin-top: 0;
+margin-bottom: 0;
+}
+</style>
+  
+</head>
 <body>
-
-  <div class="container">
-    
-  <h1>
-    Spinach, Tofu and Sesame Stir-Fry
-  </h1> 
-  
-  <h2>
-    By: Martha Rose Shulman <br><br>
-    Yield: 3 Servings
-  </h2> 
-
-    
-  </div>
- 
-  Ingredients
-
-  1 tablespoon canola oil
-  ½ pound tofu, cut in small dice
-  1 large garlic clove, minced
-  1 teaspoon grated or minced fresh ginger
-  ¼ teaspoon red chili flakes
-  Soy sauce to taste
-  16-ounce bag baby spinach, rinsed
-  2 tablespoons toasted sesame seeds
-  1 teaspoon sesame oil
-
-  Preparation
-
-  Step 1
-  Heat the canola oil over medium-high heat in a large nonstick skillet or wok, and add the tofu. Stir-fry until the tofu is lightly colored, three to five minutes, and add the garlic, ginger and chili flakes. Cook, stirring, until fragrant, about one minute, and add soy sauce to taste. Add the spinach and stir-fry until the spinach wilts, about one minute. Stir in the sesame seeds, and add more soy sauce to taste. Remove from the heat.
-
-  Step 2
-  Using tongs, transfer the spinach and tofu mixture to a serving bowl, leaving the liquid behind in the pan or wok. Drizzle with the sesame oil, and add more soy sauce as desired. Serve with rice or other grains, or noodles. You may also use it as a filling for whole wheat pita bread.
-
-  Tip
-  Advance preparation: This is a last-minute preparation, but you can have your ingredients prepared well in advance. 
-  </body>
-
+<div id="headline"><h1>This is a One Page Website...</h1></div>
+<p>...and we're going to design a desktop and a mobile view for it!</p>
+<!-- Note the use of hyperlinks below to link WITHIN a page, these are called HTML bookmarks, see https://www.w3schools.com/html/html_links_bookmarks.asp for more info--> 
+<h2>Table of Contents:</h2>
+<ul>
+<li><a href="#One">One</a></li>
+<li><a href="#Two">Two</a></li>
+<li><a href="#Three">Three</a></li>
+<li><a href="#Four">Four</a></li>
+</ul>
+<h2><a name="One">One</a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tortor nulla, efficitur a faucibus ac, vehicula vel nunc. Phasellus urna nisi, scelerisque sed eros ut, pellentesque ornare nisi. Nulla fermentum risus eu elementum imperdiet. Mauris in nibh tempus, consectetur nulla accumsan, blandit nunc. Curabitur vitae luctus purus, ac euismod libero. Quisque semper tincidunt dolor. Vivamus quis mattis dolor, at efficitur est. Aenean placerat purus sed fermentum euismod. Curabitur magna libero, gravida vel consequat non, consectetur malesuada nisi. Aliquam aliquet augue sed dui varius condimentum. In sagittis lacus risus, in hendrerit neque euismod non. Ut pulvinar augue eu elit feugiat eleifend.</p>
+<h2><a name="Two">Two</a></h2>
+<p>Integer in elit ut odio vestibulum sagittis a quis elit. Nam eget imperdiet dui. Cras consectetur nisi non ex laoreet consectetur sed a arcu. Integer non venenatis eros. Donec vel sem vel sem viverra ornare. Duis efficitur vehicula eros nec tempus. Vivamus ac magna vehicula, rhoncus dui et, aliquam dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut tempus, felis eget faucibus tristique, nisi justo dapibus augue, in iaculis elit mauris sed nisl. Suspendisse vel lorem vel mi aliquet ornare. Aenean sollicitudin volutpat mollis. Fusce quis magna euismod, pulvinar purus id, feugiat nisl. Maecenas at tortor eu enim imperdiet elementum. Ut vel aliquam arcu, molestie molestie purus. Sed viverra massa dui, ut ultrices lacus lacinia vel.</p>
+<h2><a name="Three">Three</a></h2>
+<img src="https://i.imgur.com/hvm8Jc1.jpg" alt="deck cat">
+<p>Fusce leo leo, maximus vel urna ut, egestas ultricies massa. Fusce faucibus, dolor auctor lacinia iaculis, lorem mi consequat enim, nec dignissim tortor lorem at nisi. Mauris vulputate dolor metus, in sollicitudin enim semper sed. Donec ultricies urna velit. Nulla pretium mattis odio, sed posuere ante scelerisque eu. Proin nec tortor sed nibh tempor ullamcorper pellentesque faucibus nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse accumsan dui neque, congue lobortis neque posuere nec. Cras eget dolor viverra lorem bibendum rutrum. Ut luctus rhoncus tortor eu molestie. Integer leo elit, venenatis ac nibh ac, porttitor dignissim lacus. Fusce malesuada erat mattis arcu bibendum, sed rhoncus nulla accumsan. Curabitur sed sodales dolor.</p>
+<h2><a name="Four">Four</a></h2>
+<p>Morbi vestibulum massa vitae tortor vehicula rhoncus. Duis ac orci rhoncus, consectetur justo at, faucibus lacus. Nunc sit amet dolor sed neque scelerisque congue vel at nisi. Nam pellentesque nisi eu nisi cursus vulputate. Ut condimentum semper fermentum. Nulla facilisi. Quisque porttitor dui id erat fringilla, vitae euismod ipsum pulvinar. Ut lacinia sollicitudin augue ac accumsan. Etiam molestie tincidunt mi rutrum ornare.</p>
+</body>
 </html>
